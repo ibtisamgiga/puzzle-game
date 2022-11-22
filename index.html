@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="puzzle.css">
+  
+    <title>puzzle-game</title>
+</head>
+<body>
+    <img id="title" src="logo.svg">
+    <div id="board"></div>
+    <!-- <h1>TURNS:<span id="turns">0</span></h1> -->
+    <button id="start" class="button-19" >Shuffle</button>
+    <!-- <input type ='submit'class="set">SEE PREVIOUS</input> -->
+    <button class="set">Next-round</button>
+
+    <div class="content">
+        <div onclick="togglePopup()" class="close-btn">
+            ×
+        </div>
+        <h3>Message</h3>
+  
+        <p>
+           Congrats You Won!!!.
+        </p>
+        <button class="set" onclick="togglePopup()">Next-round</button>
+       
+    </div>
+
+    <div class="info">
+      
+        <h1>Turns:<span id="turns">0</span></h1>
+       
+        <h1>Timer: 
+            <span id="sec">00</span>
+            <span> : </span>
+            <span id="min">00</span>
+            <span> : </span>
+            <span id="hr">00</span>
+        </h1>
+<div class="vep">
+     
+    <h1>Rounds:<span id="round">0</span></h1>
+        <h1>Previous-Turns:<span id="pturns">0</span></h1>
+        <h1>previous-Timer: 
+            <span id="p-sec">00</span>
+            <span> : </span>
+            <span id="p-min">00</span>
+            <span> : </span>
+            <span id="p-hr">00</span>
+        </h1>
+    </div>
+    </div>
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="puzzle.js"></script>
+
+</html>
